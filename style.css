@@ -1,0 +1,22 @@
+#example {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Стили для шапки таблиці */
+.handsontable th {
+  white-space: normal !important;  /* Дозволяє переносити текст в клітинках шапки */
+  word-wrap: break-word !important; /* Перенос слів */
+  word-break: break-word !important; /* Розбиття слів */
+  text-align: center; /* Вирівнювання тексту по центру */
+  padding: 5px;
+  max-width: 150px; /* Обмеження ширини */
+}
+
+/* Установимо обмеження по ширині для всіх стовпців */
+.handsontable th, .handsontable td {
+  max-width: 150px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
