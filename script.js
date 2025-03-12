@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     async function getModelList() {
         const proxyUrl = "https://cors-anywhere.herokuapp.com/";
         const targetUrl = "https://tmbot-dev.kivismart.com/api/tv_mfa_inventory?date=2024-10-01&chain=CF";
-        // const url = proxyUrl + targetUrl;
-        const url = targetUrl;
+        const url = proxyUrl + targetUrl;
+        // const url = targetUrl;
 
         try {
             const response = await fetch(url);
